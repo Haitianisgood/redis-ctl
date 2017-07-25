@@ -31,9 +31,9 @@ You could [make your own overridings](https://github.com/HunanTV/redis-ctl/wiki/
 
 ## environment
 
-   1.python2.7
-   2.python27-pip
-   3.mysql5.5(Personally, I confirmed)
+    1.python2.7
+    2.python27-pip
+    3.mysql5.5(Personally, I confirmed)
    
 First, install Python-dev header files and libs
 
@@ -50,10 +50,18 @@ First, install Python-dev header files and libs
 Then clone this project and cd in to install dependencies
 
     pip install -r requirements.txt
+    
+Confige override_config.py and create mysql database
 
 Run with all configurations default
 
     python main.py
+
+Use redis-ctl
+
+default:
+
+    http://127.0.0.1:5000
 
 To configure the programs, both configuration source file and environment variables (convenient for docker deployment) are applicable
 
@@ -75,6 +83,24 @@ Also you could use similar ways to configure daemon, just like setup up the main
 
 The server and daemon uses `/tmp/details.json` and `/tmp/poll.json` as default IPC files. You could change the directory for those temp files by passing the same `PERMDIR` environ to the web application and the daemon.
 
+# Simple example
+
+## override_config.py
+
+   MYSQL_HOST = '10.0.0.10'
+   MYSQL_PORT = 3306
+   MYSQL_USERNAME = 'redisctl'
+   MYSQL_PASSWORD = 'redisctl'
+   MYSQL_DATABASE = 'redisctl'
+   
+## main.py
+
+if you dont just want to access web on local，you can change main.py
+    
+    def main()
+        ...
+        app.run(host='10.0.0.10' if app.debug else '0.0.0.0',
+        ...
 # NOT SUPPORT
 
 This project is not support redis's "Password Authentication"  because of using redis-trib(itself not support password authentication)
