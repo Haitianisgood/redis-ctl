@@ -29,6 +29,12 @@ You could [make your own overridings](https://github.com/HunanTV/redis-ctl/wiki/
 
 # Setup
 
+## environment
+
+   1.python2.7
+   2.python27-pip
+   3.mysql5.5(Personally, I confirmed)
+   
 First, install Python-dev header files and libs
 
     # debain / ubuntu
@@ -36,6 +42,10 @@ First, install Python-dev header files and libs
 
     # centos
     yum install python-devel
+
+    if it dont's work,then:
+    
+    yum -y install python27-devel
 
 Then clone this project and cd in to install dependencies
 
@@ -64,3 +74,17 @@ Also you could use similar ways to configure daemon, just like setup up the main
 # IPC
 
 The server and daemon uses `/tmp/details.json` and `/tmp/poll.json` as default IPC files. You could change the directory for those temp files by passing the same `PERMDIR` environ to the web application and the daemon.
+
+# NOT SUPPORT
+
+This project is not support redis's "Password Authentication"  because of using redis-trib(itself not support password authentication)
+
+# Q&A
+
+1. About mysql-devel
+
+The redis-ctl can support mysql5.5(Personally, I confirmed) but not support 5.1.If you use mysql5.5 on centos：
+
+    yum list |grep mysql |grep devel
+    yum -y install mysql55-devel
+ 
