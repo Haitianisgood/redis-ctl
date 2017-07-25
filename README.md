@@ -87,11 +87,11 @@ The server and daemon uses `/tmp/details.json` and `/tmp/poll.json` as default I
 
 ## override_config.py
 
-   MYSQL_HOST = '10.0.0.10'
-   MYSQL_PORT = 3306
-   MYSQL_USERNAME = 'redisctl'
-   MYSQL_PASSWORD = 'redisctl'
-   MYSQL_DATABASE = 'redisctl'
+    MYSQL_HOST = '10.0.0.10'
+    MYSQL_PORT = 3306
+    MYSQL_USERNAME = 'redisctl'
+    MYSQL_PASSWORD = 'redisctl'
+    MYSQL_DATABASE = 'redisctl'
    
 ## main.py
 
