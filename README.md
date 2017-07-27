@@ -1,16 +1,5 @@
+
 Manage your Redis Clusters in a web GUI
-
-![Redis Overview](http://zlo.gs/image_data/8fb3021522baf6414c107cfd3fc0ad406461d5e5)
-
-Commit a cluster migration from a HTML form
-
-![Slot Migrating](http://zlo.gs/image_data/5dc602f756975f97a9264e6e7a94a3ad08518a2f)
-
-Display cluster nodes in a tidy table
-
-![CLUSTER NODES](http://zlo.gs/image_data/4fda367ddacd1501337bc725002dc98384083179)
-
-RedisCtl is a set of Python toolkit with a web UI based on Flask that makes it easy to manage Redis and clusters.
 
 # Overview
 
@@ -27,7 +16,26 @@ And support thirdparty utilities including
 
 You could [make your own overridings](https://github.com/HunanTV/redis-ctl/wiki/Customize_App) by implementing several interfaces. ([in Chinese](https://github.com/HunanTV/redis-ctl/wiki/WIP_v0_9_customize_app_zh)).
 
+![Redis Overview](http://zlo.gs/image_data/8fb3021522baf6414c107cfd3fc0ad406461d5e5)
+
+Commit a cluster migration from a HTML form
+
+![Slot Migrating](http://zlo.gs/image_data/5dc602f756975f97a9264e6e7a94a3ad08518a2f)
+
+Display cluster nodes in a tidy table
+
+![CLUSTER NODES](http://zlo.gs/image_data/4fda367ddacd1501337bc725002dc98384083179)
+
+RedisCtl is a set of Python toolkit with a web UI based on Flask that makes it easy to manage Redis and clusters.
+
+
 # Setup
+
+## Supportive redis version
+
+Redis 3.x（just monitoring,doesnt work about cluster operation）
+
+Redis 2.x (I don't try)
 
 ## environment
 
