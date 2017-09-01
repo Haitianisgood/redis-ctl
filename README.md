@@ -37,7 +37,7 @@ Redis 3.x（just monitoring,doesnt work about cluster operation）
 
 Redis 2.x (I don't try)
 
-## environment
+## Environment
 
     1.python2.7
     2.python27-pip
