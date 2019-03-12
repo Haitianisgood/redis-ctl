@@ -35,7 +35,7 @@ RedisCtl is a set of Python toolkit with a web UI based on Flask that makes it e
 
 Redis 3.x（just monitoring,doesnt work about cluster operation）
 
-Redis 2.x (I don't try)
+Redis 2.x (I never try)
 
 ## Environment
 
